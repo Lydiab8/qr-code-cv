@@ -40,7 +40,7 @@ p { color: #666; font-size: 15px; margin-bottom: 30px; line-height: 1.4; }
     background-color: #218838;
 }
 
-/* Bouton Fermer en bas */
+/* Style du bouton bleu en bas de l'écran */
 .close-btn {
     position: fixed;
     bottom: 0;
@@ -53,8 +53,13 @@ p { color: #666; font-size: 15px; margin-bottom: 30px; line-height: 1.4; }
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    transition: opacity 0.3s ease;
 }
 
+/* Règle magique pour cacher le bouton */
+.hidden {
+    display: none !important;
+}
 /* Pop-up */
 .popup-overlay {
     position: fixed;
