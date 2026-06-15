@@ -1,19 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV Interactif</title>
+    <title>Mon CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="cv-container">
-        <!-- Lien vers le CV  -->
-        <iframe src="assets/cur_Bouaoudia_Lydia_.pdf"></iframe>
+    <div class="main-container">
+        <h1>Bienvenue sur mon CV</h1>
+        <p>Vous pouvez consulter mon CV complet (2 pages) ou le télécharger directement sur votre appareil.</p>
+
+        <a href="assets/cur_Bouaoudia_Lydia_.pdf" target="_blank" class="download-btn">
+             Ouvrir / Télécharger le CV (PDF)
+        </a>
     </div>
 
-    <button class="close-btn" id="btn-close">Terminer la lecture</button>
+    <button class="close-btn" id="btn-close">Terminer la visite</button>
 
     <div class="popup-overlay" id="popup">
         <div class="popup-box">
