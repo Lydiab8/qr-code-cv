@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV Interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="cv-container">
+        <!-- Lien vers le CV que vous avez mis dans le dossier assets -->
+        <iframe src="assets/cv.pdf"></iframe>
+    </div>
+
+    <button class="close-btn" id="btn-close">Terminer la lecture</button>
+
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+            <h2>Merci !</h2>
+            <p>Merci pour votre lecture.</p>
+            <p>Et merci d'avoir pris le temps de lire mon profil.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
