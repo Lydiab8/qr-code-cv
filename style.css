@@ -7,9 +7,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* <-- On change 'height' en 'min-height' */
+    min-height: 100vh;
     box-sizing: border-box;
-    padding: 20px; /* Ajoute un espace de sécurité tout autour */
+    padding: 20px;
     text-align: center;
 }
 
@@ -22,10 +22,10 @@ body {
 h1 { color: #333; font-size: 24px; }
 p { color: #666; font-size: 15px; margin-bottom: 30px; line-height: 1.4; }
 
-/* Style du bouton qui ouvre le PDF */
+/* Style du bouton vert */
 .download-btn {
     display: inline-block;
-    background-color: #28a745; /* Vert "action" */
+    background-color: #28a745;
     color: white;
     text-decoration: none;
     padding: 16px 24px;
@@ -40,27 +40,7 @@ p { color: #666; font-size: 15px; margin-bottom: 30px; line-height: 1.4; }
     background-color: #218838;
 }
 
-/* Style du bouton bleu en bas de l'écran */
-.close-btn {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 18px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-/* Règle magique pour cacher le bouton */
-.hidden {
-    display: none !important;
-}
-/* Pop-up */
+/* Pop-up de remerciement */
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -84,9 +64,11 @@ p { color: #666; font-size: 15px; margin-bottom: 30px; line-height: 1.4; }
     border-radius: 16px;
     max-width: 320px;
     width: 80%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
-.popup-box h2 { color: #28a745; margin-top: 0; }
+.popup-box h2 { color: #28a745; margin-top: 0; font-size: 24px; }
+.popup-box p { font-size: 15px; color: #444; line-height: 1.4; }
 
 .popup-overlay.active {
     opacity: 1;
